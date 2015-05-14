@@ -53,3 +53,19 @@ p {
 footer.page-footer {
   margin: 0;
 }
+html, body {
+  height: 100%;
+}
+.carousel {
+  height: 100%;
+}
+.bg{
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-image: url('/static/app/content/bg.jpg');
+}
+.bg-image{
+  margin:0;border:none;width:100%;z-index:-999999;left:0;:]
+}
