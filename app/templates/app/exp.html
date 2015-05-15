@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Bhangra in the Burgh</title>
+
+  <!-- CSS  -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/app/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/app/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+
+	<div class="navbar-fixed">
+	<nav class="" role="navigation">
+    	<div class="nav-wrapper container">
+      		<a id="logo-container" href="/index.html" class="brand-logo"><img src="/static/app/content/logo.jpg" height="65" width="50"></a>
+      	  		<ul class="right hide-on-med-and-down ">
+        			<li><a href="/teams" class="green-text text-accent-3 text-lighten-1">Teams</a></li>
+        			<li><a href="#" class="green-text text-accent-3 text-lighten-1">Exhibition</a></li>
+        			<li><a href="#" class="green-text text-accent-3 text-lighten-1">Board</a></li>
+        			<li><a href="#" class="green-text text-accent-3 text-lighten-1">Sponsor</a></li>
+        			<li><a href="/contact" class="green-text text-accent-3 text-lighten-1">Contact</a></li>
+      	  		</ul>
+      	  		<ul id="nav-mobile" class="side-nav">
+        			<li><a href="/teams"><h2 class="green accent-3 lighten-1">Teams</h2></a></li>
+        			<li><a href="#">Exhibition</a></li>
+        			<li><a href="#">Board</a></li>
+        			<li><a href="#">Sponsor</a></li>
+        			<li><a href="/contact">Contact</a></li>
+      	  		</ul>
+      		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    	</div>
+  	</nav>
+  	</div>
+
+  	<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/static/app/content/background1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  	<script>
+    $('.carousel').carousel({
+        interval: 500 //changes the speed
+    })
+    </script>
+	<script src="/static/app/js/materialize.js"></script>
+  	<script src="/static/app/js/init.js"></script>
+</body>
+
+</html>
