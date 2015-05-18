@@ -697,17 +697,7 @@ section#contact {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    .callout {
-  color: #ffffff;
-  display: table;
-  height: 350px;
-  width: 100%;
-  background: url(../images/hamer.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 }
 
 section#contact .section-heading {
