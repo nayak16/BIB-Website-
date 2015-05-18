@@ -9,6 +9,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact/', 'app.views.contact'),
     url(r'^$', 'app.views.home'),
-    url(r'^index.html', 'app.views.home'),
-    url(r'^teams*', 'app.views.teams'),
+    url(r'^index.html*', 'app.views.home'),
+    url(r'^board*', 'app.views.board'),
 )

@@ -4,6 +4,8 @@ from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
 from django.db.models import F
+from django.core.mail import send_mail
+
 
 def home(request):
     """Renders the home page."""
@@ -18,9 +20,16 @@ def home(request):
         })
     )
 
+# Renders home page with confirmation of email sent
 def contact(request):
-    """Renders the home page."""
     assert isinstance(request, HttpRequest)
+
+    if 'name' in request.POST:
+        name = request.POST['name']
+    if 'organizer' in request.POST:
+        organizer = request.POST['organizer']
+    if 'admin' in request.POST:
+        admin = request.POST['admin']
     return render(
         request,
         'app/contact.html',
@@ -31,12 +40,12 @@ def contact(request):
         })
     )
 
-def teams(request):
+def board(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/teams.html',
+        'app/board.html',
         context_instance = RequestContext(request,
         {
             'title':'Home Page',

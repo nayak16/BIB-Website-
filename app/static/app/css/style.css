@@ -512,7 +512,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #33CC33;;
 }
 
 .timeline>li .timeline-image h4 {
@@ -565,7 +565,7 @@ section h3.section-subheading {
     }
 
     .timeline>li {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         min-height: 100px;
     }
 
@@ -666,15 +666,48 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+aside.clients .row{
+  margin: 0;
+}
+aside.clients .container{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+aside.clients [class*=col]{
+    padding: 0px;
+}
+
 aside.clients img {
-    margin: 50px auto;
+
+    border-style: solid;
+    border-color: #33CC33;
+    border-width: 0px;
+    margin: 0px 0px;
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url(/static/app/img/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #fff;
+    background: url(/static/app/img/boardbw.jpg) no-repeat center center fixed;
+    display: table;
+    width: 100%;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    .callout {
+  color: #ffffff;
+  display: table;
+  height: 350px;
+  width: 100%;
+  background: url(../images/hamer.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 }
 
 section#contact .section-heading {
