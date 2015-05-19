@@ -41,7 +41,7 @@ a.active {
 }
 
 a {
-    color: #00;
+`    color: #00;
 }
 
 a:hover,
@@ -75,12 +75,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #fed136;
+    
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 900;
-    color: #fff;
-    color: #33CC33;
+    background-color: #33CC33;
+    border-color: #33CC33;
 }
 
 .btn-primary:hover,
@@ -88,9 +88,10 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #fec503;
+    background-color: #29A329;
+    border-color: #29A329;
+    
+    
 }
 
 .btn-primary:active,
@@ -114,8 +115,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: ;
+    background-color: ;
 }
 
 .btn-primary .badge {
@@ -690,7 +691,7 @@ aside.clients img {
 
 section#contact {
     background-color: #fff;
-    background: url(/static/app/img/boardbw.jpg) no-repeat center center fixed;
+    background: url(/static/app/img/ssbw.jpg) no-repeat center center fixed;
     display: table;
     width: 100%;
     -webkit-background-size: cover;
@@ -698,6 +699,18 @@ section#contact {
   -o-background-size: cover;
   background-size: cover;
 
+}
+section.sponsors h3.section-subheading {
+    margin-bottom: 5px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section.sponsors img {
+    margin: 50px auto;
 }
 
 section#contact .section-heading {
@@ -756,6 +769,25 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+#message {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+#message h5{
+  text-transform: none;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.success h5{
+  color: #33CC33;
+}
+.failure h5{
+  color: #FF0000;
 }
 
 footer {

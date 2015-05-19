@@ -30,6 +30,26 @@ section h3.section-subheading {
     }
 }
 
+.delayFade1 {
+    -webkit-animation-duration:3s;
+    -moz-animation-duration:3s;
+    animation-duration:3s;
+}
+.delayFade2 {
+    -webkit-animation-duration:4s;
+    -moz-animation-duration:4s;
+    animation-duration:4s;
+}
+.waitFade1 {
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+    animation-delay:1s;
+}
+.waitFade2 {
+    -webkit-animation-delay:2s;
+    -moz-animation-delay:2s;
+    animation-delay:2s;
+}
 /* 
 Portfolio Override
 */
