@@ -2,3 +2,4 @@ django
 gunicorn
 datetime
 whitenoise
+validate_email
