@@ -91,9 +91,9 @@
     </nav>
 
     <!-- Header -->
-    <header class="fullscreen">
+    <header>
         <div class="container">
-
+        
             <div class="intro-text">
                 <div class="intro-heading fade-in one ">Bhangra in the Burgh</div>
                 <div class="info fade-in one "><p>November 7th, 2015 &middot; Soliders and Sailors Memorial Hall &middot; Pittsburgh, PA</p></div>
@@ -707,21 +707,7 @@
     <script>
         new WOW().init();
     </script>
-     <script>
-//Array of images which you want to show: Use path you want.
-var images=new Array('/static/app/img/bg.jpg','/static/app/img/bgbw.jpg','/static/app/img/smdwin.jpg');
-var nextimage=0;
-doSlideshow();
 
-function doSlideshow(){
-    if(nextimage>=images.length){nextimage=0;}
-    $('.fullscreen')
-    .css('background-image','url("'+images[nextimage++]+'")')
-    .fadeIn(500,function(){
-        setTimeout(doSlideshow,1000);
-    });
-}
-</script>
     <!-- Custom Theme JavaScript -->
     <script src="/static/app/js/agency.js"></script>
 
