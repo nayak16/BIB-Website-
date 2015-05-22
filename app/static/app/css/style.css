@@ -280,7 +280,6 @@ fieldset[disabled] .btn-xl.active {
     text-align: center;
     color: #fff;
     height: 100%;
-    /* background-image: url(/static/app/img/bg.jpg ); */
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
