@@ -11,6 +11,8 @@ urlpatterns = patterns('',
     url(r'^$', 'app.views.home'),
     url(r'^index.html*', 'app.views.home'),
     url(r'^board*', 'app.views.board'),
+    url(r'^tickets*', 'app.views.tickets'),
+    url(r'^teams*', 'app.views.teams'),
     url(r'^posttest*', 'app.views.posttest'),
 
 )

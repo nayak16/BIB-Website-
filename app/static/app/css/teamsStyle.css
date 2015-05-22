@@ -1,10 +1,3 @@
-/*
-
-Override of base homepage CSS Template 
-
-*/
-
-
 section {
     padding: 100px 0;
 }
@@ -30,29 +23,12 @@ section h3.section-subheading {
     }
 }
 
-.delayFade1 {
-    -webkit-animation-duration:3s;
-    -moz-animation-duration:3s;
-    animation-duration:3s;
-}
-.delayFade2 {
-    -webkit-animation-duration:4s;
-    -moz-animation-duration:4s;
-    animation-duration:4s;
-}
-.waitFade1 {
-    -webkit-animation-delay:1s;
-    -moz-animation-delay:1s;
-    animation-delay:1s;
-}
-.waitFade2 {
-    -webkit-animation-delay:2s;
-    -moz-animation-delay:2s;
-    animation-delay:2s;
-}
 /* 
 Portfolio Override
 */
+#portfolio {
+    padding-top: 30px;
+}
 
 #portfolio .portfolio-item {
     right: 0;
@@ -152,108 +128,44 @@ Portfolio Override
     }
 }
 
-.last-row {
-    margin-left: 25%;
-}
-
-
-/* 
-
-Navbar CSS Override
-
-*/
-.navbar-default {
-    border-color: transparent;
-    background-color: #222;
-}
-
-.navbar-default .navbar-brand {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    color: #33CC33;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-
-
-}
-
-.navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-        color: #33CC33;
-
-}
-
-.navbar-default .nav li a {
+.tabs {
+  position: relative;
+  height: 48px;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100% !important;
+  white-space: nowrap; }
+  .tabs .tab {
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    padding: 0 20px;
+    margin: 0;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
-    outline: 0;
-    color: #33CC33;
-
-}
-
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
+    letter-spacing: .8px;
+    width: 15%; }
+    .tabs .tab a {
+      color: #000;
+      display: block;
+      font-size: 2rem;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: color .28s ease;
+      -moz-transition: color .28s ease;
+      -o-transition: color .28s ease;
+      -ms-transition: color .28s ease;
+      transition: color .28s ease; }
+      .tabs .tab a:hover {
+        color: #33CC33; }
+  .tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
     background-color: #33CC33;
-}
+    will-change: left, right; }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    
-}
+.tabs .tab {
+  padding: 0; }
 
-@media(min-width:768px) {
-    .navbar-default {
-        padding: 25px 0;
-        border: 0;
-        background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
-    }
-
-    .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
-    }
-
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-}
