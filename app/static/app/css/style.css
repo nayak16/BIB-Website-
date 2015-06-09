@@ -179,6 +179,18 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: top;
+  left: 50px;
+  
+
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .navbar-default .navbar-brand {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -195,7 +207,6 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
-    width: 100%;
 }
 
 .navbar-default .navbar-toggle {
@@ -217,9 +228,12 @@ fieldset[disabled] .btn-xl.active {
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #fff;
+    font-size: 1.1em;
 }
+
+.
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -272,8 +286,22 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.navbar .navbar-nav {
+  float: none;
+  vertical-align: top;
+  left: 12%;
+}
+.shrink {
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.logo-hide {
+  top: -10000px;
+}
+
 .navbar-content{
-  width: 90%;
+  
 }
 
 .fullscreen {

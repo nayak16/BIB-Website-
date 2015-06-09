@@ -58,16 +58,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" id="logo-container" href="/" class="brand-logo">
-                    <img src="/static/app/img/logo.jpg" height="65" width="50">
-
-                </a>
+                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse row" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right col-md-12">
                     <li class="hidden">
                         <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">About Us</a>
@@ -77,6 +77,11 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand page-scroll" id="logo-container" href="/" class="brand-logo">
+                            <img src="/static/app/img/logo.jpg" height="65" width="50">
+                        </a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -731,7 +736,17 @@
     ]
     });
     </script>
-
+    <script type="text/javascript">
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 300) {
+                $('#logo-container').addClass('logo-hide');
+                $('.page-scroll').addClass('shrink');
+            } else {
+                $('#logo-container').removeClass('logo-hide');
+            }
+        });
+    </script>
     <!-- Custom Theme JavaScript -->
     <script src="/static/app/js/agency.js"></script>
 
