@@ -375,7 +375,7 @@ font-family: 'Lato', sans-serif;
 }
 
 .banner {
-  background-color: #d6df23;
+  background-color: #f9ec00;
   width: 100%;
 }
 
@@ -443,7 +443,7 @@ section h2.section-heading {
 
 section h2.about-us {
   margin-top: 45px;
-  margin-bottom: -34px;
+  margin-bottom: -48px;
 }
 
 section h3.section-subheading {
@@ -464,7 +464,12 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    text-align: left;
+    margin-top: 28px;
 
+}
+.description {
+  text-align: left;
 }
 
 .fullscreen {
