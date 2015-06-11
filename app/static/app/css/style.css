@@ -254,14 +254,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #b1ca35;
+    color: #000 !important ;
+    background-color: #f9ec00;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #b1ca35;
+    background-color: #f9ec00;
 }
 
 .adjusted {
@@ -465,6 +465,43 @@ section h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
 
+}
+
+.fullscreen {
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    background-image: url(/static/app/img/homepageimage.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.poster-1{
+  height: 80vh;
+  background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  background-image: url(/static/app/img/cmubhangra.jpg);
+}
+
+.poster-2{
+  height: 100vh;
+  background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  background-image: url(/static/app/img/jumpingdancers.jpg);
 }
 
 #portfolio .portfolio-item {
@@ -882,7 +919,7 @@ section#contact .text-danger {
   color: #b1ca35;
 }
 .failure h5{
-  color: #FF0000;
+  color: #ef4036;
 }
 
 footer {
@@ -927,7 +964,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #f9ec00;
 }
 
 .btn:focus,
