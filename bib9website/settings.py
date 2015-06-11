@@ -98,3 +98,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),   
 )
 
+
+EMAIL_HOST = 'gmail.com'
+EMAIL_HOST_USER = 'bhangraintheburgh'
+EMAIL_HOST_PASSWORD = 'SHINEforBIB9'
+EMAIL_PORT = 587
+

@@ -32,6 +32,7 @@ def contact(request):
     email = ""
     subject = ""
     msg = ""
+    print request.POST
     if 'name' in request.POST:
         name = request.POST['name']
     else:
@@ -42,21 +43,24 @@ def contact(request):
     else:
         context['failure'] = "Please fill out all fields"
 
-    if 'name' in request.POST:
+    if 'subject' in request.POST:
         subject = request.POST['subject']
     else:
         context['failure'] = "Please fill out all fields"
 
-    if 'name' in request.POST:
+    if 'message' in request.POST:
         msg = request.POST['message']
     else:
         context['failure'] = "Please fill out all fields"    
 
-    if validate_email(email):
-        context['success'] = "Thanks for your message! We'll get back to you soon."
-    else:
-        context['failure'] = "Sorry not a valid email address"
     
+    try:
+        send_mail(subject, msg, 'bhangraintheburgh@gmail.com',
+                    [email], fail_silently=False)
+    except Exception as e:
+        print e
+        print "Failed email"
+
     return render(request,'app/index.html',context)
 
 

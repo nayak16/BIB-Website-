@@ -319,9 +319,11 @@ fieldset[disabled] .btn-xl.active {
 }
 
 
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    width: 100%;
     color: #33CC33;
 
 }
@@ -350,10 +352,21 @@ font-family: 'Lato', sans-serif;
     line-height: 50px;
 }
 
+.banner {
+  background-color: #d6df23;
+  width: 100%;
+}
+
+.banner-wrap {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
+        width: 9000px;
     }
 
     header .intro-text .intro-lead-in {
