@@ -11,7 +11,7 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Antique-Olive", sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -102,8 +102,9 @@ Portfolio Override
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
-    text-align: center;
+    text-align: left;
     background-color: #fff;
+
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -113,7 +114,7 @@ Portfolio Override
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Antique-Olive", sans-serif;
     font-size: 16px;
     font-style: italic;
 }
@@ -158,12 +159,12 @@ Portfolio Override
       -ms-transition: color .28s ease;
       transition: color .28s ease; }
       .tabs .tab a:hover {
-        color: #33CC33; }
+        color: #b1ca35; }
   .tabs .indicator {
     position: absolute;
     bottom: 0;
     height: 2px;
-    background-color: #33CC33;
+    background-color: #b1ca35;
     will-change: left, right; }
 
 .tabs .tab {

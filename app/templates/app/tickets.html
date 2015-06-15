@@ -46,7 +46,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
         <div class="container navbar-content">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -56,38 +56,34 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" id="logo-container" href="/" class="brand-logo">
-                    <img src="/static/app/img/logo.jpg" height="65" width="50">
-
-                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
                     <li>
-                        <a class="" href="/#services">About Us</a>
-                    </li>
-                    <li>
-                        <a class="" href="/#history">History</a>
-                    </li>
-                    <li>
-                        <a class="" href="/#sponsors">Sponsors</a>
-                    </li>
-                    <li>
-                        <a class="" href="/#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="" href="/teams.html">Teams</a>
-                    </li>
-                    <li>
-                        <a class="" href="/tickets.html">Tickets</a>
-                    </li>
-                    <li>
-                        <a class="" href="/board.html">The Board</a>
-                    </li>
+                <a class="page-scroll black-font" href="/">Home</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="/#services">About Us</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="/#history">History</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="/#sponsors">Sponsors</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="/#contact">Contact</a>
+            </li>
+            <li>
+                <a class="" href="/teams.html">Teams</a>
+            </li>
+            <li>
+                <a class="" href="/tickets.html">Tickets</a>
+            </li>
+            <li>
+                <a class="" href="/board.html">The Board</a>
+            </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -154,6 +150,17 @@
     <script src="/static/app/js/wow.min.js"></script>
     <script>
         new WOW().init();
+        $('.page-scroll').addClass('shrink');
+                $('.navbar-default .nav li a').css('margin','9px');
+                $('.navbar-default .nav li a').css('color','#fff');
+
+                $(".navbar-default .nav li a").mouseenter(function() {
+                    $(this).css("color", "#808080");
+                }).mouseleave(function() {
+                    $(this).css("color", "#fff");
+                });
+                $('.navbar .navbar-nav').css('margin-top','0%')
+                $('.navbar .navbar-nav').css('margin-bottom','1%') 
     </script>
 
     <!-- Custom Theme JavaScript -->
