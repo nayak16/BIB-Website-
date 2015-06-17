@@ -71,7 +71,7 @@ Portfolio Override
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(51,204,51,.9);
+    background-color: #b1ca35;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -95,7 +95,7 @@ Portfolio Override
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p{
     
-    font-size: 15px;
+    font-size: 17px;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content-small {
     position: absolute;
@@ -110,7 +110,7 @@ Portfolio Override
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content-small p{
     
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -170,7 +170,7 @@ Navbar CSS Override
 .navbar-default .navbar-brand {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    color: #33CC33;
+    color: #b1ca35;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -196,7 +196,7 @@ Navbar CSS Override
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-        color: #33CC33;
+        color: #b1ca35;
 
 }
 
