@@ -10,7 +10,7 @@
   src:url("/static/app/fonts/ANTIQUE1.eot?") format("eot"),
   url("/static/app/fonts/ANTIQUE1.woff") format("woff"),
   url("/static/app/fonts/ANTIQUE1.ttf") format("truetype"),
-  url("/static/app/fonts/ANTIQUE1.svg#Antique-Olive") format("svg");
+  url("/static/app/fonts/ANTIQUE1.svg#Antique-Oliventi") format("svg");
   font-weight:normal;font-style:normal;
 }
 
@@ -97,8 +97,8 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: #29A329;
-    border-color: #29A329;
+    background-color: #c8d971;
+    border-color: #c8d971;
     
     
 }

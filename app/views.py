@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 from validate_email import validate_email
-
+import smtplib
 
 def home(request):
     """Renders the home page."""
@@ -55,11 +55,18 @@ def contact(request):
 
     
     try:
-        send_mail(subject, msg, 'bhangraintheburgh@gmail.com',
-                    [email], fail_silently=False)
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login("bhangraintheburgh@gmail.com", "SHINEforBIB9")
+        message = 'Subject: %s\n\n%s' % (subject, msg)
+        server.sendmail("bhangraintheburgh@gmail.com", email, message)
+        server.quit()
     except Exception as e:
+        context['failure'] = "Oops Something went wrong"
         print e
-        print "Failed email"
+
+    if not ('failure' in context):
+        context['success'] = "Thanks! We'll get back to you soon!"
 
     return render(request,'app/index.html',context)
 
