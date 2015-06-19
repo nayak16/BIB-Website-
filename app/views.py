@@ -5,6 +5,8 @@ from django.template import RequestContext
 from datetime import datetime
 from django.db.models import F
 from django.core.mail import send_mail
+from django.contrib import messages
+from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -35,38 +37,50 @@ def contact(request):
     print request.POST
     if 'name' in request.POST:
         name = request.POST['name']
+        if(len(name)==0):
+            context['failure'] = "Please fill out all fields"
     else:
         context['failure'] = "Please fill out all fields"
 
     if 'email' in request.POST:
         email = request.POST['email']
+        if(len(email)==0):
+            context['failure'] = "Please fill out all fields"
     else:
         context['failure'] = "Please fill out all fields"
 
     if 'subject' in request.POST:
         subject = request.POST['subject']
+        if(len(subject)==0):
+            context['failure'] = "Please fill out all fields"
     else:
         context['failure'] = "Please fill out all fields"
 
     if 'message' in request.POST:
         msg = request.POST['message']
+        if(len(msg)==0):
+            context['failure'] = "Please fill out all fields"
+
     else:
         context['failure'] = "Please fill out all fields"    
 
-    
-    try:
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.starttls()
-        server.login("bhangraintheburgh@gmail.com", "SHINEforBIB9")
-        message = 'Subject: %s\n\n%s' % (subject, msg)
-        server.sendmail("bhangraintheburgh@gmail.com", email, message)
-        server.quit()
-    except Exception as e:
-        context['failure'] = "Oops Something went wrong"
-        print e
-
     if not ('failure' in context):
         context['success'] = "Thanks! We'll get back to you soon!"
+        try:
+            server = smtplib.SMTP(settings.EMAIL_HOST, settings.EMAIL_PORT)
+            server.starttls()
+            server.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
+            message = 'Subject: %s\n\nFrom: %s\nMessage: %s' % (subject, email, msg)
+            server.sendmail(settings.EMAIL_HOST_USER,settings.EMAIL_HOST_USER, message)
+            server.quit()
+        except Exception as e:
+            context['failure'] = "Oops Something went wrong"
+            print e
+    else:
+        context['name']=name
+        context['subject']=subject
+        context['email']=email
+        context['message']=msg
 
     return render(request,'app/index.html',context)
 

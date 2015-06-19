@@ -83,7 +83,7 @@
                 </a>
             </li>
             <li>
-                <a class="page-scroll" href="#contact">Contact</a>
+                <a id="contactSection" class="page-scroll" href="#contact">Contact</a>
             </li>
             <li>
                 <a class="" href="/teams.html">Teams</a>
@@ -486,22 +486,22 @@
 
                                 <div class="input-field">
 
-                                    <input id="first_name" type="text" name="name" class="validate">
+                                    <input id="first_name" type="text" name="name" class="validate" value={{name}}>
 
                                     <label for="first_name">Name</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="email" type="email" name="email" class="validate">
+                                    <input id="email" type="email" name="email" class="validate" value={{email}}>
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="phone_number" type="text" name="subject" class="validate">
+                                    <input id="phone_number" type="text" name="subject" class="validate" value={{subject}}>
                                     <label for="phone_number">Subject</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-field">
-                                <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                                <textarea id="textarea1" class="materialize-textarea" name="message">{{message}}</textarea>
                                     <label for="textarea1">Message</label>
                                 </div>
                             </div>
@@ -607,6 +607,13 @@
     });
     </script>
     <script type="text/javascript">
+        $(document).ready(function () {
+            if($('#message').attr('class')=='failure') {
+                $("body, html").animate({ 
+                    scrollTop: $('#contact').offset().top 
+                }, 600);
+            }
+        });
         $(document).scroll(function() {
             var y = $(this).scrollTop();
             if (y > 290) {

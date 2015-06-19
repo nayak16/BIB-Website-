@@ -99,8 +99,8 @@ STATICFILES_DIRS = (
 )
 
 
-EMAIL_HOST = 'gmail.com'
-EMAIL_HOST_USER = 'bhangraintheburgh'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bhangraintheburgh@gmail.com'
 EMAIL_HOST_PASSWORD = 'SHINEforBIB9'
 EMAIL_PORT = 587
 
