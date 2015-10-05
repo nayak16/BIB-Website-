@@ -115,8 +115,12 @@ Portfolio Override
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: "Antique-Olive", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-style: italic;
+}
+
+#portfolio .portfolio-item .portfolio-caption a {
+    color: #b1ca35;
 }
 
 #portfolio * {
